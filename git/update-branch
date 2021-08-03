@@ -1,0 +1,8 @@
+#!/bin/bash
+
+BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+
+git checkout master && \
+git fetch origin && \
+git checkout $BRANCH && \
+git rebase master
