@@ -1,5 +1,5 @@
 #!/bin/bash
 
 git checkout master && \
-git pull && \
+git fetch origin master && \
 git checkout -b "feature-$(date +%s)"
