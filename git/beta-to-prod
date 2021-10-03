@@ -1,8 +1,10 @@
 #!/bin/bash
 
-git checkout master && \
+DEFAULT_BRANCH=$(get-default-branch)
+
+git checkout $DEFAULT_BRANCH && \
 git pull && \
 git checkout deploy/production && \
-git merge master && \
+git merge $DEFAULT_BRANCH && \
 git push && \
 new-feature-branch
