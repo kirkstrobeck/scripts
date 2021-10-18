@@ -1,6 +1,0 @@
-#!/bin/bash
-
-git push && \
-gh pr create --fill --draft && \
-gh pr view --web && \
-new-feature-branch

@@ -1,6 +1,0 @@
-#!/bin/bash
-
-NEW_BRANCH="feature-$(date +%s)"
-
-git checkout -b $NEW_BRANCH && \
-update-branch
